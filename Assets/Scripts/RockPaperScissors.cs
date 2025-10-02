@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class RoclPaperScissors : MonoBehaviour
+public class RockPaperScissors : MonoBehaviour
 {
 
     //RPS LUT
@@ -19,16 +19,16 @@ public class RoclPaperScissors : MonoBehaviour
 
     int[,] resultTable = new int[3, 3];
 
-    int ROCK = 0;
-    int PAPER = 1;
-    int SCISSORS = 2;
+    public int ROCK = 0;
+    public int PAPER = 1;
+    public int SCISSORS = 2;
 
     int DRAW = 0;
     int LOSS = 1;
     int WIN = 2;
 
     string[] play = { "Rock", "Paper", "Scissors" };
-    string[] result = { "Draw", "Loss", "Win" };
+    string[] result = { "Draw", "Lose", "Win" };
 
     public bool playIt = false;
 
@@ -67,4 +67,15 @@ public class RoclPaperScissors : MonoBehaviour
 
         }
     }
+
+    public string PlayOnce(int me, int him)
+    {
+        int r = resultTable[me, him];
+
+        Debug.Log("I played " + play[me] + " he played " + play[him]);
+        Debug.Log("I " + result[r]);
+
+        return result[r];
+    }
+
 }

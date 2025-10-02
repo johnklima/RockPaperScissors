@@ -315,6 +315,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 4966b547029ab2e4e8726c2dd66ae78a, type: 3}
       insertIndex: -1
       addedObject: {fileID: 412822013}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 4966b547029ab2e4e8726c2dd66ae78a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 412822015}
   m_SourcePrefab: {fileID: 100100000, guid: 4966b547029ab2e4e8726c2dd66ae78a, type: 3}
 --- !u!1 &410087039
 GameObject:
@@ -470,6 +473,22 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &412822015
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 412822012}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f61dd524bdac334698d06270340d58f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+  rps: {fileID: 1331407765}
+  whatIplay: 0
+  whatHePlay: 1
+  doit: 0
 --- !u!1 &832575517
 GameObject:
   m_ObjectHideFlags: 0
@@ -546,6 +565,22 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1065452653
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1065452650}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f61dd524bdac334698d06270340d58f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Encounter
+  rps: {fileID: 1331407765}
+  whatIplay: 1
+  whatHePlay: 0
+  doit: 0
 --- !u!1 &1331407764
 GameObject:
   m_ObjectHideFlags: 0
@@ -556,6 +591,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1331407766}
   - component: {fileID: 1331407765}
+  - component: {fileID: 1331407767}
   m_Layer: 0
   m_Name: TheGame
   m_TagString: Untagged
@@ -575,6 +611,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd53aea16352d634db17f413505122c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RoclPaperScissors
+  ROCK: 0
+  PAPER: 1
+  SCISSORS: 2
   playIt: 0
 --- !u!4 &1331407766
 Transform:
@@ -591,6 +630,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1331407767
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1331407764}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fdd8ff4c8d72cc34fb704ff2a91008c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+  player1: {fileID: 412822015}
+  player2: {fileID: 1065452653}
+  fight: 0
 --- !u!1001 &1821637551
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -650,6 +704,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 487a66aca2b5f764089ae0d3c8d8b6c7, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1065452651}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 487a66aca2b5f764089ae0d3c8d8b6c7, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1065452653}
   m_SourcePrefab: {fileID: 100100000, guid: 487a66aca2b5f764089ae0d3c8d8b6c7, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
