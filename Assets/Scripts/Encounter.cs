@@ -9,10 +9,12 @@ public class Encounter : MonoBehaviour
     public int whatHePlay;
     public bool doit = false;
 
+    //our anim param "strike" names, same order as the RPS LUT
     string[] play = { "Rock", "Paper", "Scissors" };
 
     private void Start()
     {
+        //get this character's animation behaviour
         animator = GetComponent<Animator>();
     }
 
@@ -20,15 +22,16 @@ public class Encounter : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //if told to do it...
         if(doit)
         {
             doit = false;
 
-            animator.SetTrigger(play[whatIplay]);
+            animator.SetTrigger(play[whatIplay]);  //set the strike
 
-            string animparam = rps.PlayOnce(whatIplay, whatHePlay);
+            string animparam = rps.PlayOnce(whatIplay, whatHePlay); //get the result param name
             
-            animator.SetTrigger(animparam);
+            animator.SetTrigger(animparam);         //play the reaaction
 
         }
     }
