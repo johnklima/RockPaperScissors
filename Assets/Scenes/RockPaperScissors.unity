@@ -306,7 +306,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 4966b547029ab2e4e8726c2dd66ae78a, type: 3}
       propertyPath: m_Name
-      value: Maria WProp J J Ong
+      value: Amy
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -318,6 +318,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 4966b547029ab2e4e8726c2dd66ae78a, type: 3}
       insertIndex: -1
       addedObject: {fileID: 412822015}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 4966b547029ab2e4e8726c2dd66ae78a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 412822016}
   m_SourcePrefab: {fileID: 100100000, guid: 4966b547029ab2e4e8726c2dd66ae78a, type: 3}
 --- !u!1 &410087039
 GameObject:
@@ -489,6 +492,20 @@ MonoBehaviour:
   whatIplay: 0
   whatHePlay: 1
   doit: 0
+--- !u!114 &412822016
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 412822012}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a6c0f52b1e5e0a4ab5059e8725f53b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HeroBackstory
+  dialog: []
+  curDialog: 0
 --- !u!1 &832575517
 GameObject:
   m_ObjectHideFlags: 0
