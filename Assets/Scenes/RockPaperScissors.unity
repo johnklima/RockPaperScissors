@@ -321,6 +321,12 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 4966b547029ab2e4e8726c2dd66ae78a, type: 3}
       insertIndex: -1
       addedObject: {fileID: 412822016}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 4966b547029ab2e4e8726c2dd66ae78a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 412822018}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 4966b547029ab2e4e8726c2dd66ae78a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 412822017}
   m_SourcePrefab: {fileID: 100100000, guid: 4966b547029ab2e4e8726c2dd66ae78a, type: 3}
 --- !u!1 &410087039
 GameObject:
@@ -348,14 +354,14 @@ Light:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 410087039}
   m_Enabled: 1
-  serializedVersion: 11
+  serializedVersion: 12
   m_Type: 1
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 2
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
-  m_CookieSize: 10
+  m_CookieSize2D: {x: 10, y: 10}
   m_Shadows:
     m_Type: 2
     m_Resolution: -1
@@ -506,6 +512,40 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::HeroBackstory
   dialog: []
   curDialog: 0
+--- !u!114 &412822017
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 412822012}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a8864914b65df54d982ca798fc94cf4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+  version: 
+--- !u!114 &412822018
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 412822012}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cfc282b204b4c0441bb4fab3398cddb0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BagOfHolding
+  stuff:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!1 &832575517
 GameObject:
   m_ObjectHideFlags: 0
